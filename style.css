@@ -1,0 +1,125 @@
+* {margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', sans-serif;}
+
+body {
+  background: #f3f8fc;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header .logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: #007bff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logout-btn {
+  background: #fff;
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover { background: #e74c3c; color: #fff; }
+
+/* Tabs */
+.tabs {
+  margin: 20px 0;
+  display: flex;
+  gap: 15px;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tab.active {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Container */
+.container { max-width: 1000px; margin: auto; }
+
+.subtitle { text-align: center; margin: 10px 0 20px; color: #666; }
+
+/* Cards */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Form */
+.form { margin-bottom: 15px; }
+.form-group { display: flex; gap: 10px; margin-bottom: 10px; }
+.form-group input, .form-group select {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.btn.primary { background: #007bff; color: #fff; }
+.btn.primary:hover { background: #0056b3; }
+.btn.danger { background: #e74c3c; color: #fff; }
+.btn.danger:hover { background: #c0392b; }
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead {
+  background: #f1f5f9;
+}
+
+table th, table td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+table tbody tr:hover { background: #f9fbfd; }
